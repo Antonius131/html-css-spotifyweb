@@ -6,15 +6,21 @@
 
 :root {
    /* colors */
-   --primary-font-color: #fff;
-   --secondary-font-color: rgba(255,255,255,.4);
-   --bg-color: #141922; 
-   --bg-secondary-color: #000;
+   --primary-bg-color: #1c2332; 
+   --secondary-bg-color: #000;
    --footer-color: #282828;
 
-   /* font-size */
+   /* font color */
+   --primary-font-color: #fff;
+   --secondary-font-color: rgba(255,255,255,.4);
+
+   /* font size */
    --nav-items: 14px;
    --caption: 10px;
+}
+
+.ingombri {
+   background-color: rgb(34, 34, 34);
 }
 
 body {
@@ -22,16 +28,24 @@ body {
    color: var(--primary-font-color);
 }
 
-ul {
-   list-style: none;
+.container {
+   display: flex;
+   padding: 14px;
 }
 
 div {
-   height: 150px;
+   height: 50px;
    width: 100%;
-   background-color: rgb(71, 71, 71);
 }
 
+ul {
+   font-size: var(--nav-items);
+   list-style: none;
+}
+
+li {
+   display: inline;
+}
 
 
 /******************************
@@ -39,11 +53,37 @@ div {
 *******************************/
 
 aside {
-   background-color: var(--bg-secondary-color);
+   background-color: var(--secondary-bg-color);
+   font-size: var(--nav-items);
+   color: var(--secondary-font-color);
    float: left;
    width: 10%;
    height: 90vh;
 }
+
+aside .container {
+   height: 100%;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -61,10 +101,65 @@ aside {
 *******************************/
 
 main {
-   background-color: var(--bg-color);
+   background-color: var(--primary-bg-color);
+   position: relative;
    height: 90vh;
    overflow: auto;
 }
+
+/* upgrade box */
+
+.upgrade-box {
+   background-color: rgba(0,0,0,.4);
+   position: sticky;
+   width: 100%;
+   height: auto;
+   padding: 20px;
+   top: 0;
+   left: 0;
+   text-align: right;
+}
+
+/* tabs */
+
+.tab-buttons {
+   color: var(--secondary-font-color);
+   text-align: center;
+}
+
+.tab-buttons ul {
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
