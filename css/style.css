@@ -34,7 +34,6 @@ body {
 }
 
 div {
-   height: 50px;
    width: 100%;
 }
 
@@ -42,11 +41,6 @@ ul {
    font-size: var(--nav-items);
    list-style: none;
 }
-
-li {
-   display: inline;
-}
-
 
 /******************************
             ASIDE
@@ -66,6 +60,12 @@ aside .container {
    flex-direction: column;
    justify-content: space-between;
 }
+
+aside div {
+   height: 50px;
+}
+
+
 
 
 
@@ -107,6 +107,7 @@ main {
    overflow: auto;
 }
 
+
 /* upgrade box */
 
 .upgrade-box {
@@ -120,8 +121,6 @@ main {
    text-align: right;
 }
 
-/* tabs */
-
 .tab-buttons {
    color: var(--secondary-font-color);
    text-align: center;
@@ -131,7 +130,24 @@ main {
    width: 100%;
 }
 
+.tab-buttons li {
+   display: inline;
+}
 
+
+/* recently played */
+
+.recently-played {
+   flex-wrap: wrap;
+   column-gap: 1rem;
+   row-gap: 1rem;
+}
+
+.recently-played .ingombri {
+   background-color: azure;
+   width: calc(100% / 2 - .5rem);
+   height: 200px;
+}
 
 
 
