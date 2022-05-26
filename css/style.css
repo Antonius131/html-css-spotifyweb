@@ -204,7 +204,11 @@ main {
 }
 
 
+/* most popular */
 
+.rounded-image {
+   border-radius: 50%;
+}
 
 
 
