@@ -46,6 +46,15 @@ ul {
    list-style: none;
 }
 
+a {
+   text-decoration: none;
+   color: var(--secondary-font-color);
+}
+
+a:hover {
+   color: var(--primary-font-color);
+}
+
 
 /******************************
             NAVBAR
@@ -66,13 +75,8 @@ nav .container {
    justify-content: space-between;
 }
 
-.nav-menu i,
-.user-box i {
-   margin-right: 6px;
-}
-
-.nav-menu p,
-.user-box p {
+.nav-menu a,
+.user-box a {
    font-size: var(--nav-items);
    font-weight: 500;
    display: inline;
@@ -88,7 +92,7 @@ nav .container {
    display: none;
 }
 
-p.menu-txt {
+span.menu-txt {
    display: none;
 }
 
@@ -120,15 +124,6 @@ p.menu-txt {
 .download-box {
    margin-bottom: 1rem;
 }
-
-   
-
-
-
-
-
-
-
 
 
 

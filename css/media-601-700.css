@@ -4,6 +4,10 @@
                NAVBAR
    *******************************/
 
+   .nav-menu i,
+   .user-box i {
+      margin-right: 6px;
+   }
 
    /* logo-box */
 
@@ -26,7 +30,7 @@
       text-align: left;
    }
 
-   p.menu-txt {
+   span.menu-txt {
       display: inline;
    }
    
