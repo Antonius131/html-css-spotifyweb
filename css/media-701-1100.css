@@ -6,7 +6,7 @@
    
    /* recently played */
 
-   .flex-cards .ingombri {
+   .flex-cards .artist-card {
       width: calc(100% / 4 - .75rem);
    }
 }

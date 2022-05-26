@@ -19,10 +19,6 @@
    --caption: 10px;
 }
 
-.ingombri {
-   background-color: rgb(55, 55, 55);
-}
-
 body {
    font-family: 'Montserrat', sans-serif;
    color: var(--primary-font-color);
@@ -37,16 +33,13 @@ body {
    color: var(--primary-font-color);
 }
 
-div {
-   width: 100%;
-}
-
 ul {
    font-size: var(--nav-items);
    list-style: none;
 }
 
-a {
+a,
+p {
    color: var(--secondary-font-color);
    font-size: var(--nav-items);
    text-decoration: none;
@@ -134,6 +127,7 @@ main {
 }
 
 
+
 /* upgrade box */
 
 .upgrade-box {
@@ -154,6 +148,8 @@ main {
    border: 1px solid var(--primary-font-color);
    color: var(--primary-font-color);
 }
+
+
 
 /* tabs button */
 
@@ -185,14 +181,27 @@ main {
    row-gap: 1rem;
 }
 
-.flex-cards .ingombri {
-   background-color: azure;
-   width: calc(100% / 2 - .5rem);
-   height: 200px;
+.title-row {
+   width: 100%;
 }
 
+.flex-cards .artist-card {
+   width: calc(100% / 2 - .5rem);
+}
 
+.artist-image img {
+   display: inline-block;
+   width: 100%;
+}
 
+.artist-caption {
+   padding: 0.5rem;
+   text-align: center;
+}
+
+.artist-caption h5 {
+   margin-bottom: .5rem;
+}
 
 
 
