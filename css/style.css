@@ -15,7 +15,7 @@
    --secondary-font-color: rgba(255,255,255,.4);
 
    /* font size */
-   --nav-items: 14px;
+   --nav-items: 12px;
    --caption: 10px;
 }
 
@@ -33,6 +33,10 @@ body {
    padding: 1rem;
 }
 
+.active {
+   color: var(--primary-font-color);
+}
+
 div {
    width: 100%;
 }
@@ -42,51 +46,82 @@ ul {
    list-style: none;
 }
 
+
 /******************************
-            ASIDE
+            NAVBAR
 *******************************/
 
-aside {
+nav {
    background-color: var(--secondary-bg-color);
-   font-size: var(--nav-items);
    color: var(--secondary-font-color);
    float: left;
-   width: 10%;
-   height: 90vh;
+   width: 50px;
+   height: calc(100vh - 90px);
    overflow: hidden;
 }
 
-aside .container {
+nav .container {
    height: 100%;
    flex-direction: column;
    justify-content: space-between;
 }
 
-aside div {
-   height: 50px;
+.nav-menu i,
+.user-box i {
+   margin-right: 6px;
 }
 
+.nav-menu p,
+.user-box p {
+   font-size: var(--nav-items);
+   font-weight: 500;
+   display: inline;
+}
 
+/* logo box */
 
+.logo-box {
+   margin-bottom: 1rem;
+}
 
+.logo {
+   display: none;
+}
 
+p.menu-txt {
+   display: none;
+}
 
+/* nav-items */
 
+.nav-items {
+   text-align: center;
+   margin-bottom: 1rem;
+}
 
+.nav-items li {
+   padding: 0.25rem 0px;
+}
 
+/* new playlist */
 
+.new-playlist {
+   display: none;
+}
 
+/* playlist list */
 
+.playlist-list {
+   display: none;
+}
 
+/* user-box - download */
 
+.download-box {
+   margin-bottom: 1rem;
+}
 
-
-
-
-
-
-
-
+   
 
 
 
@@ -104,7 +139,7 @@ aside div {
 main {
    background-color: var(--primary-bg-color);
    position: relative;
-   height: 90vh;
+   height: calc(100vh - 90px);
    overflow: auto;
 }
 
@@ -162,33 +197,6 @@ main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************************
             FOOTER
 *******************************/
@@ -196,9 +204,10 @@ main {
 footer {
    background-color: var(--footer-color);
    width: 100%;
-   height: 10vh;
+   height: 90px;
 }
 
 footer .container {
-   justify-content: space-between;  
+   justify-content: space-between;
+   align-items: center;
 }
