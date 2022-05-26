@@ -6,12 +6,12 @@
 
    /* recently played */
 
-   .recently-played {
+   .flex-cards {
       column-gap: 1.5rem;
       row-gap: 1.5rem;
    }
 
-   .recently-played .ingombri {
+   .flex-cards .ingombri {
       width: calc(100% / 6 - 1.25rem);
    }
 

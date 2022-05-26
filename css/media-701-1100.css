@@ -6,7 +6,7 @@
    
    /* recently played */
 
-   .recently-played .ingombri {
+   .flex-cards .ingombri {
       width: calc(100% / 4 - .75rem);
    }
 }
