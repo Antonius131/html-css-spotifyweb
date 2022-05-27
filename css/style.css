@@ -15,6 +15,7 @@
    --secondary-font-color: rgba(255,255,255,.4);
 
    /* font size */
+   --primary-font-size: 16px;
    --nav-items: 12px;
    --caption: 10px;
 }
@@ -230,3 +231,122 @@ footer .container {
    justify-content: space-between;
    align-items: center;
 }
+
+.player-album,
+.player-options,
+.album-track,
+.console-trackbar,
+.console-icons,
+.player-options {
+   display: flex;
+   align-items: center;
+}
+
+.player-icon {
+   font-size: var(--primary-font-size);
+}
+
+/* player album */
+
+.player-album {
+   justify-content: space-between;
+   width: 30%;
+}
+
+.album-track {
+   display: flex;
+   width: 70%;
+}
+
+.album-track .artist-image {
+   width: 30%;
+}
+
+.album-track .artist-caption {
+   text-align: left;
+   width: 70%;
+}
+
+.album-icons {
+   width: 30%;
+}
+
+.album-icons .player-icon {
+   color: var(--secondary-font-color);
+}
+
+/* player console - console icons */
+
+.player-console {
+   width: 40%;
+   padding: 0rem .25rem;
+}
+
+.console-icons {
+   justify-content: center;
+   width: 100%;
+   text-align: center;
+}
+
+.console-icons .icon-box {
+   display: inline-block;
+   padding: 0rem .55rem;
+   font-size: var(--primary-font-size);
+}
+
+.icon-box.play-button {
+   padding: 0rem 1rem;
+}
+
+.fa-circle-play {
+   font-size: 1.75rem;
+}
+
+
+/* player console - console trackbar */
+
+.console-trackbar {
+   justify-content: space-between;
+   margin-top: .5rem;
+}
+
+.time-tracker {
+   width: 15%;
+   padding: 0rem .5rem;
+}
+
+.time-start {
+   text-align: right;
+}
+
+.trackbar {
+   width: 70%;
+   height: 3px;
+   border-radius: 2px;
+   background-color: var(--secondary-font-color);
+}
+
+.time-track {
+   display: block;
+   background-color: var(--primary-font-color);
+   height: 100%;
+   border-radius: 2px;
+   width: 20%;
+}
+
+
+/* player options */
+
+.player-options {
+   width: 30%;
+   text-align: center;
+}
+
+.player-options .icon-box {
+   width: 15%;
+}
+
+.player-options .trackbar{
+   width: 55%;
+}
+

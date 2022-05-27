@@ -74,6 +74,24 @@
       padding-top: 9px;
    }
 
+
+   /******************************
+               FOOTER
+   *******************************/
+
+   .player-album {
+      width: 250px;
+   }
+   
+   .player-console {
+      width: 50%;
+   }
+   
+   
+   .player-options {
+      width: 250px;
+   }
+
 }
 
 
@@ -81,9 +99,6 @@
 
 @media screen and (min-width: 601px) and (max-width: 700px){
 
-   /******************************
-               NAVBAR
-   *******************************/
 
    
    
