@@ -213,10 +213,6 @@ main {
 
 
 
-
-
-
-
 /******************************
             FOOTER
 *******************************/
@@ -350,3 +346,165 @@ footer .container {
    width: 55%;
 }
 
+
+
+
+
+
+
+
+
+
+/******************************
+         MEDIA QUERIES
+*******************************/
+
+@media screen and (min-width: 601px) {
+
+   /******************************
+               NAVBAR
+   *******************************/
+
+   .nav-menu i,
+   .user-box i {
+      margin-right: 6px;
+   }
+
+   /* logo-box */
+
+   nav {
+      width: 180px;
+   }
+
+   img.logo-small {
+      display: none;
+   }
+
+   .logo {
+      display: block;
+      height: 30px;
+   }
+
+   /* nav items */
+
+   .nav-items {
+      text-align: left;
+   }
+
+   span.menu-txt {
+      display: inline;
+   }
+   
+   /* new playlist */
+
+   .new-playlist {
+      display: block;
+      margin-bottom: 1rem;
+   }
+
+   .new-playlist h6 {
+      color: var(--primary-font-color);
+      margin-bottom: .5rem;
+   }
+
+   .new-playlist span {
+      color: var(--secondary-bg-color);
+      background-color: var(--secondary-font-color);
+      font-size: 18px;
+      font-weight: 600;
+      padding: 0px 6px;
+      vertical-align: middle;
+      margin-right: 6px;
+   }
+   
+   /* playlist list */
+
+   .playlist-list {
+      display: block;
+      font-weight: 600;
+   }
+
+   .playlist-list li {
+      padding: .25rem 0px;
+   }
+
+   /* user box - profile box */
+
+   .profile-box {
+      border-top: 1px solid var(--secondary-font-color);
+      padding-top: 9px;
+   }
+
+
+   /******************************
+               FOOTER
+   *******************************/
+
+   .player-album {
+      width: 250px;
+   }
+   
+   .player-console {
+      width: 50%;
+   }
+   
+   
+   .player-options {
+      width: 250px;
+   }
+
+}
+
+
+
+@media screen and (min-width: 701px) {
+
+   /******************************
+               FOOTER
+   *******************************/
+
+
+   .album-icons .icon-box {
+      display: inline-block;
+      padding: 0rem .25rem;
+   }
+
+
+}
+
+
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+
+   /******************************
+               MAIN
+   *******************************/
+   
+   /* recently played */
+
+   .flex-cards .artist-card {
+      width: calc(100% / 4 - .75rem);
+   }
+
+}
+
+
+
+@media screen and (min-width: 1101px) {
+
+   /******************************
+               MAIN
+   *******************************/
+
+   /* recently played */
+
+   .flex-cards {
+      column-gap: 1.5rem;
+      row-gap: 1.5rem;
+   }
+
+   .flex-cards .artist-card {
+      width: calc(100% / 6 - 1.25rem);
+   }
+
+}
