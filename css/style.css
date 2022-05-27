@@ -365,6 +365,14 @@ footer .container {
                NAVBAR
    *******************************/
 
+   .nav-menu {
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+   }
+
+
+
    .nav-menu i,
    .user-box i {
       margin-right: 6px;
@@ -422,6 +430,12 @@ footer .container {
    .playlist-list {
       display: block;
       font-weight: 600;
+      min-height: 0px;
+   }
+
+   .playlist-list ul {
+      height: 100%;
+      overflow-y: auto;
    }
 
    .playlist-list li {
